@@ -3,7 +3,7 @@
 #include "Book.h"
 #include "Library.h"
 using namespace std;
-//random comment
+//random comment 
 void userInterface(Library& lib) {
 	while (true) {
 	cout << "------Welcome to the Book Management System------\nEnter the task you would like to perform:\na)Add a new book.\nb)Remove a book\nc)Display list of books.\nd)Exit." << endl;
@@ -47,5 +47,6 @@ void userInterface(Library& lib) {
 int main() {
     Library library;
     userInterface(library);
+	cout<<"forking task done!";
     return 0;
 }
