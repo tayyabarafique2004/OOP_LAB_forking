@@ -3,6 +3,7 @@
 #include "Book.h"
 #include "Library.h"
 using namespace std;
+//random comment
 void userInterface(Library& lib) {
 	while (true) {
 	cout << "------Welcome to the Book Management System------\nEnter the task you would like to perform:\na)Add a new book.\nb)Remove a book\nc)Display list of books.\nd)Exit." << endl;
@@ -35,10 +36,10 @@ void userInterface(Library& lib) {
 			lib.listBooks();
 			break;
 		case 'd':
-			cout << "Exiting..." << endl;
+			cout << "Quiting...." << endl;
 			return;
 		default:
-			cout << "Invalid choice. Please try again." << endl;
+			cout << "Invalid." << endl;
 			break;
 		}
 	}

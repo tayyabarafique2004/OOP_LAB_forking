@@ -3,14 +3,14 @@
 
 void Library::addBook(const Book& book) {
     books.push_back(book);
-    std::cout << "\nBook added!\n";
+    std::cout << "\nBook has been added sucessfully!\n";
 }
 
 bool Library::removeBook(const std::string& title) {
     for (auto it = books.begin(); it != books.end(); ++it) {
         if (it->getTitle() == title) {
             books.erase(it);
-            std::cout << "\nBook removed!\n";
+            std::cout << "\nBook has been removed sucessfully!\n";
             return true;
         }
     }std::cout << "\nBook not Found...\n";
